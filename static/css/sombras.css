@@ -1,0 +1,29 @@
+.glow-cyan { 
+    box-shadow: 0 0 20px rgba(19, 182, 236, 0.2); 
+    transition: box-shadow 0.3s ease;
+}
+.glow-cyan:hover {
+    box-shadow: 0 0 30px rgba(19, 182, 236, 0.4);
+}
+
+.glow-orange { 
+    box-shadow: 0 0 15px rgba(255, 107, 0, 0.3); 
+}
+
+/* Efecto Frosted Glass (Cristal Esmerilado) */
+.glass-panel { 
+    background: rgba(22, 34, 38, 0.7); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+/* Relleno para iconos Material */
+.fill-1 {
+    font-variation-settings: 'FILL' 1;
+}
+
+.hero-log{
+    height: 50px;
+    width: auto;
+}

@@ -1,392 +1,104 @@
 <!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tedrix Colombia</title>
+    <link rel="icon" type="image/x-icon" href="static/images/logos/tedrix.ico">
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Tedrix Tech Solutions | High-End IT Infrastructure</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#13b6ec",
-                        "accent": "#ff6b00",
-                        "background-light": "#f6f8f8",
-                        "background-dark": "#0a0f12",
-                        "surface-dark": "#162226",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
-<style>
-        .glow-cyan { box-shadow: 0 0 15px rgba(19, 182, 236, 0.3); }
-        .glow-orange { box-shadow: 0 0 15px rgba(255, 107, 0, 0.3); }
-        .glass-panel { background: rgba(22, 34, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(146, 187, 201, 0.1); }
-    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="static/css/sombras.css">
+    <script src="static/js/tailwind.js"></script>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
-<div class="relative flex min-h-screen w-full flex-col">
-<header class="sticky top-0 z-50 glass-panel border-b border-white/5 px-6 md:px-12 py-4">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-10">
-<div class="flex items-center gap-3">
-<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-background-dark">
-<span class="material-symbols-outlined font-bold">view_in_ar</span>
-</div>
-<h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Tedrix</h2>
-</div>
-<nav class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Custom Development</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Hardware Store</a>
-</nav>
-</div>
-<div class="flex items-center gap-6">
-<div class="hidden md:flex relative group">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">search</span>
-<input class="bg-slate-200 dark:bg-surface-dark border-none rounded-full pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary w-64 transition-all" placeholder="Search systems..." type="text"/>
-</div>
-<button class="relative p-2 hover:bg-white/5 rounded-full transition-colors">
-<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">shopping_cart</span>
-<span class="absolute top-0 right-0 size-4 bg-accent text-[10px] font-bold text-white rounded-full flex items-center justify-center border-2 border-background-dark">3</span>
-</button>
-<div class="size-10 rounded-full border-2 border-primary/30 p-0.5">
-<img alt="User Profile" class="w-full h-full rounded-full object-cover" data-alt="Cyberpunk style user profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFhK6eLqQDY3VgL5TlC0sc1eNbPn8HefIpbyczNb3awASMTruCNOzBKJY98rtci5ifo2NLqBB92b2IXOdlF9DZbtreQEeyJU8HqAJlJ1AD3Qf9JrgR0WMgQMFwBhmt4xzj9ZxzysIb7PT2m0uMmxKNtRl4iKAmaqhRsPlTQUecS7fs0nvKADBtOOzSHAWPwogErYex2swulNXSYEsM4WkjC7dmGB_EPPvD4NewEhS2_1mN6JAy6_QBSN20hv6-zWHa3iib4dHdYERf"/>
-</div>
-</div>
-</div>
-</header>
-<main class="flex-1">
-<section class="relative pt-20 pb-32 px-6 overflow-hidden">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none">
-<div class="absolute top-1/4 left-1/4 size-[500px] bg-primary/40 blur-[120px] rounded-full"></div>
-<div class="absolute bottom-1/4 right-1/4 size-[500px] bg-accent/30 blur-[120px] rounded-full"></div>
-</div>
-<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-<div class="flex flex-col gap-8">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit">
-<span class="material-symbols-outlined text-sm">bolt</span> Next-Gen Infrastructure
+
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header class="sticky top-0 z-50 glass-panel border-b border-white/5 px-6 md:px-12 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-10">
+                    <div class="flex items-center gap-3">
+                        <img class="hero-log" src="static/images/logos/1.png" alt="">
+                        <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white" ></h2>
+                    </div>
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Servicios</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Conocenos</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tienda</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex relative group">
+                        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="bg-slate-200 dark:bg-surface-dark border-none rounded-full pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary w-64 transition-all" placeholder="Buscar..." type="text"/>
+                    </div>
+                    <button class="relative p-2 hover:bg-white/5 rounded-full transition-colors">
+                        <span class="material-symbols-outlined text-slate-700 dark:text-slate-300"> <i class="fa-solid fa-cart-shopping"></i> </span>
+                        <span id="cart-badge" class="absolute top-0 right-0 size-4 bg-accent text-[10px] font-bold text-white rounded-full flex items-center justify-center border-2 border-background-dark">3</span>
+                    </button>
+                    <div class="size-10 rounded-full border-2 border-primary/30 p-0.5">
+                        <img alt="User" class="w-full h-full rounded-full object-cover" src="static/images/tedrix.co.jpg">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none">
+                    <div class="absolute top-1/4 left-1/4 size-[500px] bg-primary/40 blur-[120px] rounded-full"></div>
+                    <div class="absolute bottom-1/4 right-1/4 size-[500px] bg-accent/30 blur-[120px] rounded-full"></div>
+                </div>
+                <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+                            <span class="material-symbols-outlined text-sm"><i class="fa-solid fa-hammer"></i></span> Infraestructura de última generación
                         </div>
-<h1 class="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tighter text-slate-900 dark:text-white">
-                            Building the <span class="text-primary">Digital Spine</span> of Enterprise.
+                        <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tighter text-slate-900 dark:text-white">
+                            El estándar de <span class="text-primary">confianza</span> en IT y Desarrollo.
                         </h1>
-<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-                            Premium hardware, bespoke server configurations, and elite software engineering. Tedrix provides the technological foundation for the world's most ambitious projects.
+                        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                            Hardware de primera calidad, configuraciones de servidor a medida e ingeniería de software de élite.
                         </p>
-<div class="flex flex-wrap gap-4">
-<button class="px-8 py-4 bg-primary text-background-dark font-bold rounded-lg hover:scale-105 transition-transform glow-cyan flex items-center gap-2">
-                                Get a Custom Quote <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="px-8 py-4 bg-surface-dark border border-white/10 text-white font-bold rounded-lg hover:bg-surface-dark/80 transition-all flex items-center gap-2">
-                                Explore Hardware Store
+                        <div class="flex flex-wrap gap-4">
+                            <button class="px-8 py-4 bg-primary text-background-dark font-bold rounded-lg hover:scale-105 transition-transform glow-cyan flex items-center gap-2">
+                                Conocer más <span class="material-symbols-outlined"></span>
                             </button>
-</div>
-<div class="flex items-center gap-6 pt-4 grayscale opacity-60">
-<span class="text-sm font-semibold text-slate-500 uppercase">Trusted by:</span>
-<span class="text-xl font-bold">TECHNO</span>
-<span class="text-xl font-bold">FLUX</span>
-<span class="text-xl font-bold">NEXUS</span>
-</div>
-</div>
-<div class="relative">
-<div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 glow-cyan">
-<img alt="Server Infrastructure" class="w-full aspect-square object-cover" data-alt="High-tech server room with glowing blue LED lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeus_QQXCV27WMJQmF7wsMx3b-Ssqv_sarYyaVcc2ewYJDXnP6COpaE1IgCMkQ0fen4fNa4GQNtF9UIfZDnUgZ33qdlxl3VBl7HBxo4ng7Xq7LMs90gHgQ45-7f4bM9K7_EtK5cJLDOPScquz1hH-S3zRcfBu0h71J4kxlvVw3Yg5ROcpCdahql3HRIom_jgiL11OvvUmOEBZ_o_SpVnTbUF_gdPdQUOd1lW2UcY0lEXH0_y313RyW1tl0Mz7AcmSrNRuOC2Z1EDC8"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-xl">
-<div class="flex items-center justify-between">
-<div>
-<p class="text-primary text-xs font-bold uppercase mb-1">Live Status</p>
-<p class="text-white font-medium">Global Network Nodes: 1,402</p>
-</div>
-<div class="text-accent flex flex-col items-end">
-<p class="text-xs font-bold uppercase mb-1">Uptime</p>
-<p class="text-white font-medium">99.998%</p>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute -top-6 -right-6 size-32 bg-accent rounded-full blur-[60px] opacity-50"></div>
-<div class="absolute -bottom-10 -left-10 size-48 bg-primary rounded-full blur-[80px] opacity-30"></div>
-</div>
-</div>
-</section>
-<section class="py-24 px-6 bg-slate-100 dark:bg-surface-dark/30">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
-<div class="max-w-2xl">
-<h2 class="text-3xl md:text-4xl font-bold mb-4">Core Tech Services</h2>
-<p class="text-slate-600 dark:text-slate-400">Integrated solutions designed to scale with your operation from seed stage to global enterprise.</p>
-</div>
-<button class="text-primary font-bold flex items-center gap-2 group">
-                            View all services <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_right_alt</span>
-</button>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="p-8 glass-panel rounded-2xl group hover:border-primary/50 transition-all cursor-pointer">
-<div class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">hub</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Enterprise Networking</h3>
-<p class="text-slate-500 dark:text-slate-400 mb-6">Ultra-low latency connectivity architectures and 100G fiber deployments for heavy data loads.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>SD-WAN Solutions</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Global Mesh Networks</li>
-</ul>
-</div>
-<div class="p-8 glass-panel rounded-2xl border-accent/20 group hover:border-accent/50 transition-all cursor-pointer relative overflow-hidden">
-<div class="absolute top-0 right-0 p-2 bg-accent text-[10px] font-black text-white uppercase tracking-tighter rounded-bl-lg">Popular</div>
-<div class="size-14 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">dns</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Custom Server Racks</h3>
-<p class="text-slate-500 dark:text-slate-400 mb-6">Bespoke enclosure designs with advanced liquid cooling and redundant power delivery systems.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent text-sm">check_circle</span>Immersion Cooling</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent text-sm">check_circle</span>Smart PDU Integration</li>
-</ul>
-</div>
-<div class="p-8 glass-panel rounded-2xl group hover:border-primary/50 transition-all cursor-pointer">
-<div class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">security</span>
-</div>
-<h3 class="text-xl font-bold mb-3">CCTV &amp; Cyber-Security</h3>
-<p class="text-slate-500 dark:text-slate-400 mb-6">AI-powered surveillance hardware integrated with military-grade network encryption protocols.</p>
-<ul class="space-y-3 text-sm text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Biometric Access Control</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Real-time Threat Detection</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-6">
-<div class="max-w-7xl mx-auto">
-<div class="flex items-center justify-between mb-12">
-<h2 class="text-3xl font-bold">Featured Hardware</h2>
-<div class="flex gap-2">
-<button class="size-10 rounded-lg border border-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="size-10 rounded-lg border border-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-surface-dark/40 border border-white/5 rounded-2xl overflow-hidden group hover:bg-surface-dark transition-colors">
-<div class="aspect-square relative overflow-hidden bg-slate-800">
-<img alt="Workstation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="High-performance liquid-cooled PC with custom RGB lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUm6Z2FdFxyhiC5WtyuMslICCAG8aCB-x-jiKL7QqmZ371RolfOVmXbw_f_S9rP74C58DggxRkfPEJrtEMg9aNJd_mp_cuFdhX5maoLZ2fmdEyG71IdhJoKXoQkvqlxLENFA8rrmnbBQraaYfXia0RpiwiNXoiRCn5SN2yOnw0F0loShkUyAH38fbYlCES6RxXBoUtGYmUUWHc0jU-J1doinmgQHgTzylENjULURZiOBDeSUgIGV55Sufg8LxL5d6Q1X2kckKJgPlj"/>
-<button class="absolute bottom-4 right-4 size-10 bg-primary text-background-dark rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div class="p-5">
-<p class="text-slate-500 text-xs font-bold uppercase mb-1">Workstations</p>
-<h4 class="font-bold text-lg mb-2">Tedrix Pro-X 9000</h4>
-<div class="flex items-center justify-between">
-<span class="text-primary font-bold text-xl">$4,299</span>
-<div class="flex text-accent">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-surface-dark/40 border border-white/5 rounded-2xl overflow-hidden group hover:bg-surface-dark transition-colors">
-<div class="aspect-square relative overflow-hidden bg-slate-800">
-<img alt="Networking Gear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Industrial 24-port network switch with blue patch cables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1sFcMz8xdQDeZkiNAsfDXUYKO-TW6V_-zImeWPqXRmLBeguUv8A7pCSw-NphITBCS3-aivPRW7i9XUsD0ECBjRhpIaeRzk6T-VUVQCwi13i4Nvh9X8cArq9SH3gd228VKEfKjrIW_prV_MP4uTzszuPkeBJH8487mOpTyUwvt7qsFxAh-Wu_D1fvVapDEWq49bcQa3awRR5HGfVPPvVCzIEOCBoABrt-XCQpeaoqVKY95s-0qMfswpeqEGBZkMVK2njkG5hjxOXjZ"/>
-<button class="absolute bottom-4 right-4 size-10 bg-primary text-background-dark rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div class="p-5">
-<p class="text-slate-500 text-xs font-bold uppercase mb-1">Networking</p>
-<h4 class="font-bold text-lg mb-2">T-Net Core Switch</h4>
-<div class="flex items-center justify-between">
-<span class="text-primary font-bold text-xl">$899</span>
-<div class="flex text-accent">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-surface-dark/40 border border-white/5 rounded-2xl overflow-hidden group hover:bg-surface-dark transition-colors">
-<div class="aspect-square relative overflow-hidden bg-slate-800">
-<img alt="Server Storage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Storage server drive array with green blinking indicator lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9xc4w_Y0RwfyK_TnYC2CWdRfRqY8FlbqCKGOoYKSTjsJ9GEYKnhGLhu1xhV1KUuzcg0pWTSajyNusE0EtG1FJmYw4q5dsMi3xhPZro6X8COibYymth4H7jD0V__x8J033qGAJQzs-g2syg7KaW--EqAF4FXivoLyiDEizyWXQ7txugZ8MCfgLo9ImycqzPt5lVp3qOjW18Jzg65J8_eonjaNYzhxoL1SiU9Uxb7DDSDrvyfcGoPn3GM5NlMUIGDfJV6Z9NHtJHcF-"/>
-<button class="absolute bottom-4 right-4 size-10 bg-primary text-background-dark rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div class="p-5">
-<p class="text-slate-500 text-xs font-bold uppercase mb-1">Storage</p>
-<h4 class="font-bold text-lg mb-2">Vault XL 400TB</h4>
-<div class="flex items-center justify-between">
-<span class="text-primary font-bold text-xl">$12,450</span>
-<div class="flex text-accent">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-surface-dark/40 border border-white/5 rounded-2xl overflow-hidden group hover:bg-surface-dark transition-colors">
-<div class="aspect-square relative overflow-hidden bg-slate-800">
-<img alt="VR Gear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Futuristic VR headset and controllers on a dark tech surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcYgtANoqNPUh2FU1-vh0wSJ3BpQKftuabEUdQPUcMkxU_tjjem6yP6EeN9SNkegB87v3BHrk0McicoV_GSNB_sWDdCgLuT0aeE63cvhe51Boz8ypNnYZI5moM80FHhqmrcjNMhtBxPVNEP_6hBn6ZRJhcvsNcWOIWn8-j8gxMYKzYacLUA1MKISJafptqIAtlwd3_5YM4fErhs7VhuX51lw5MHEMHoQKgFwZzeJuirSwD_HKeYtq8AgZHKd38xYuIuV6wC9yRSq9J"/>
-<button class="absolute bottom-4 right-4 size-10 bg-primary text-background-dark rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div class="p-5">
-<p class="text-slate-500 text-xs font-bold uppercase mb-1">Peripherals</p>
-<h4 class="font-bold text-lg mb-2">Vision X Meta-Gear</h4>
-<div class="flex items-center justify-between">
-<span class="text-primary font-bold text-xl">$1,199</span>
-<div class="flex text-accent">
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-<span class="material-symbols-outlined text-sm fill-1">star</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 px-6 relative overflow-hidden">
-<div class="max-w-7xl mx-auto glass-panel p-12 md:p-20 rounded-3xl relative overflow-hidden border-primary/20">
-<div class="absolute top-0 right-0 w-1/3 h-full -z-10 opacity-30">
-<div class="absolute inset-0 bg-gradient-to-l from-primary/40 to-transparent"></div>
-</div>
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div class="flex flex-col gap-8">
-<h2 class="text-4xl md:text-5xl font-bold leading-tight">Need a <span class="text-accent">Custom Build?</span></h2>
-<p class="text-lg text-slate-400">Our engineering team specializes in tailor-made hardware and software stacks designed for unique performance requirements.</p>
-<div class="space-y-6">
-<div class="flex gap-4">
-<div class="size-12 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined">rocket_launch</span>
-</div>
-<div>
-<h5 class="font-bold mb-1">Rapid Prototyping</h5>
-<p class="text-sm text-slate-500">From concept to functioning prototype in under 3 weeks.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="size-12 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-accent shrink-0">
-<span class="material-symbols-outlined">terminal</span>
-</div>
-<div>
-<h5 class="font-bold mb-1">Exclusive Dev Stacks</h5>
-<p class="text-sm text-slate-500">Custom firmware and kernels optimized for your hardware.</p>
-</div>
-</div>
-</div>
-<button class="w-full md:w-fit px-10 py-5 bg-accent text-white font-bold rounded-xl glow-orange hover:scale-105 transition-transform">
-                                Schedule Engineering Consultation
+                            <button class="px-8 py-4 bg-surface-dark border border-white/10 text-white font-bold rounded-lg hover:bg-surface-dark/80 transition-all">
+                                Explorar tienda
                             </button>
-</div>
-<div class="relative">
-<div class="aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-<img alt="Tech Consultation" class="w-full h-full object-cover" data-alt="Mechanical engineer working with industrial circuitry and 3D diagrams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTfiZns8aAtAJ6GJdS-w8HiyHLcK0iEoEwdbvyfmC7GX_aTLx4OIwLEmC_VvnlSGIkNNeVilM6V-kbDH2_mxbWG8NL-mrWKouJzMjoS97X0cCP-naYppU3pSHLUMAUYEXdz3dBa8EPC54_LNPmc3C02k5sDns5GrdGsdShvHQfhI0hPGKs8aVeK-F6AcBIzSx16fAoQzoXAPD5GsOP6zZ3FxRxzKXMe06ByZ3vKoUm8G-AkMzVRw9LdPl52PsLs5FDP0dXKRtyF_0a"/>
-<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
-</div>
-<div class="absolute -bottom-6 -right-6 p-6 glass-panel rounded-xl flex items-center gap-4">
-<div class="flex -space-x-3">
-<img class="size-10 rounded-full border-2 border-surface-dark" data-alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBliUBVWgzhiJPPlZXQCKbw-S8LCyfrNPjVNLeUDrPR7wAv9pDdVofZen2F5V9pH6JVe7uRe2hP_iqLzZWSZOTxZ0F8-OR3ZFGYj2aCwQvu4dnlxmbc1bif0CVwWP5V4FX8LUkBjmrtm7XpGqDHKhZev0cxXZR_QcBr8OljqAuAiEP_h5PyPPBF_xtEmO_d01S62Mkl-usQkK_zroRs0JbzqpeT0MV4uzzPd0Sb8h9F2I3Lxq1VDBAbP17tkfk3Xj3s91zl93JcReP9"/>
-<img class="size-10 rounded-full border-2 border-surface-dark" data-alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMiGuQiX_2_TdiL2vmJujFMN03Q8sfGbgnS7YA0x65ySugFKDkhwEbcXuKF1pL29CCZWbeAwHyZTj8AGMESUIY4CxtSZ_lPBg9Mmh0LCvRD9YUrucYth5Tk1tdIAgAQ5W6jfYkamThNLoDrRNcxJbixSDgpLr6fPxrsYVTQbC0HVYXEyrdq6ZW97DbUtATBrEh7b81AaJEZaLZi54xUyy04dOkawyCqRZwUwM7_6qj5qdgzuYVKZ8Vd0s9oss-1CCsrCsVz_8JppZD"/>
-<img class="size-10 rounded-full border-2 border-surface-dark" data-alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeueZLqpvJE95FyCkxRVcpqoqbfkID4yBEspSizeIJvRVkuBHzVzgbJz1VZvOrR5gzbjqN9Ef5xNXOHtLq6Y5Zm3hRdkZedkL0Z9Dvd1eUMcF0iFkjYVmr4QQbbzPIIQ9dFFiYe-eqz6A6eAnJYYnH5zgT7AJ64Tf4cq9G_Z-zz9lwV1hj1L2Uj-2LS0i63k_H2Fp0uCDUMMiOAb70akRhYIeScf73VUKZKXJCzGiWgF570D05LOyfCPf0X3HSrh-Eo3N728sKL__X"/>
-</div>
-<div>
-<p class="text-xs font-bold text-primary">Experts Online</p>
-<p class="text-sm font-medium text-white">Engineering Support (24/7)</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-background-dark border-t border-white/5 pt-20 pb-10 px-6">
-<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-16">
-<div class="col-span-2">
-<div class="flex items-center gap-3 mb-6">
-<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
-<span class="material-symbols-outlined font-bold">view_in_ar</span>
-</div>
-<h2 class="text-2xl font-bold tracking-tight text-white">Tedrix</h2>
-</div>
-<p class="text-slate-500 mb-8 max-w-sm">Leading the technological frontier through precision hardware and advanced software engineering since 2018.</p>
-<div class="flex gap-4">
-<a class="size-10 rounded-full bg-surface-dark flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
-<a class="size-10 rounded-full bg-surface-dark flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
-<a class="size-10 rounded-full bg-surface-dark flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">terminal</span></a>
-</div>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Products</h6>
-<ul class="space-y-4 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">Server Racks</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Workstations</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Networking Hubs</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Security Kits</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Services</h6>
-<ul class="space-y-4 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">Custom Dev</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Cloud Migration</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Security Audit</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Hardware Design</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Support</h6>
-<ul class="space-y-4 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">Knowledge Base</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Driver Downloads</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Live Chat</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Legal</h6>
-<ul class="space-y-4 text-sm text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">Terms of Sale</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Warranty Info</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
-<p>© 2024 Tedrix Tech Solutions. All rights reserved.</p>
-<div class="flex gap-6">
-<span>Designed for the Future.</span>
-<span>Powered by 100% Renewable Energy.</span>
-</div>
-</div>
-</footer>
-</div>
-</body></html>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 glow-cyan">
+                            <img alt="Server" class="w-full aspect-square object-cover" src="static/images/temp.png">
+                            <div class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-xl">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-primary text-xs font-bold uppercase mb-1">Desarrollamos</p>
+                                        <p class="text-white font-medium">Software a medida</p>
+                                    </div>
+                                    <div class="text-accent text-right">
+                                        <p class="text-xs font-bold uppercase mb-1">Efectividad</p>
+                                        <p class="text-white font-medium">99.99%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            </main>
+
+        <footer class="bg-background-dark border-t border-white/5 pt-20 pb-10 px-6 text-center text-slate-500 text-sm">
+            <p>© 2026 Tedrix. Designed for the Future.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
