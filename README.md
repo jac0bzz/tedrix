@@ -15,7 +15,7 @@
 
 ---
 
-<h1 align="center">Bienvenido a Full Services S.A.S 🚀</h1>
+<h1 align="center">Welcome to tedrix.co 🩵</h1>
 
 <p align="center">
   <em>Premium hardware, bespoke server configurations, and elite software engineering. Tedrix provides the technological foundation for the world's most ambitious projects.</em>
@@ -41,16 +41,6 @@
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
-
----
-## ⚙️ Funcionalidades
-
-✅ Sección principal con **carrusel dinámico**.  
-✅ Páginas de **servicios con modales** y enlaces personalizados.  
-✅ Formularios de **contacto y trabajo** conectados con **EmailJS**.  
-✅ Soporte **multilenguaje (Español / Inglés)**.  
-✅ Diseño **responsivo y optimizado**.  
-✅ Enlaces directos a **WhatsApp y redes sociales**.
 
 ---
 
