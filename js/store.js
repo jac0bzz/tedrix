@@ -5,7 +5,7 @@ const products = [
         name: "MacBook Pro", 
         price: "3.500.000   ", 
         category: "Computadores Corporativos", 
-        image: "../assets/Laptop.png", 
+        image: "assets/Laptop.png", 
         reviews: 147 
     },
     { 
@@ -13,7 +13,7 @@ const products = [
         name: "Rack 80 PT", 
         price: "2.000.000", 
         category: "Racks", 
-        image: "../assets/rack.png", 
+        image: "assets/rack.png", 
         reviews: 88 
     },
     { 
@@ -21,7 +21,7 @@ const products = [
         name: "Servidor XL 400TB", 
         price: "12,450.000", 
         category: "Servidores", 
-        image: "../assets/Servidor.png", 
+        image: "assets/Servidor.png", 
         reviews: 56 
     },
     { 
