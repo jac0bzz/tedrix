@@ -1,104 +1,270 @@
 <!DOCTYPE html>
-<html class="dark" lang="es">
+<html lang="es">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Tedrix Colombia</title>
-    <link rel="icon" type="image/x-icon" href="static/images/logos/tedrix.ico">
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="static/css/sombras.css">
-    <script src="static/js/tailwind.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tedrix</title>
+    <link rel="icon" type="image/x-icon" href="assets/Icono-Tedrix.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<body>
 
-    <div class="relative flex min-h-screen w-full flex-col">
-        <header class="sticky top-0 z-50 glass-panel border-b border-white/5 px-6 md:px-12 py-4">
-            <div class="max-w-7xl mx-auto flex items-center justify-between">
-                <div class="flex items-center gap-10">
-                    <div class="flex items-center gap-3">
-                        <img class="hero-log" src="static/images/logos/1.png" alt="">
-                        <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white" ></h2>
-                    </div>
-                    <nav class="hidden lg:flex items-center gap-8">
-                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Servicios</a>
-                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Conocenos</a>
-                        <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tienda</a>
-                    </nav>
+    <div class="global-background-glow"></div>
+
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#home" class="logo">
+                    <img class="main-logo" src="assets/Logo Tedrix.png" alt="Logo Tedrix">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#store">Tienda</a></li>
+                    <li><a href="#custom">Desarrollo a medida</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search systems...">
                 </div>
-                <div class="flex items-center gap-6">
-                    <div class="hidden md:flex relative group">
-                        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input class="bg-slate-200 dark:bg-surface-dark border-none rounded-full pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary w-64 transition-all" placeholder="Buscar..." type="text"/>
+                <div class="nav-actions">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span>
                     </div>
-                    <button class="relative p-2 hover:bg-white/5 rounded-full transition-colors">
-                        <span class="material-symbols-outlined text-slate-700 dark:text-slate-300"> <i class="fa-solid fa-cart-shopping"></i> </span>
-                        <span id="cart-badge" class="absolute top-0 right-0 size-4 bg-accent text-[10px] font-bold text-white rounded-full flex items-center justify-center border-2 border-background-dark">3</span>
-                    </button>
-                    <div class="size-10 rounded-full border-2 border-primary/30 p-0.5">
-                        <img alt="User" class="w-full h-full rounded-full object-cover" src="static/images/tedrix.co.jpg">
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=User&background=0D8ABC&color=fff" alt="User">
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <main class="flex-1">
-            <section class="relative pt-20 pb-32 px-6 overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none">
-                    <div class="absolute top-1/4 left-1/4 size-[500px] bg-primary/40 blur-[120px] rounded-full"></div>
-                    <div class="absolute bottom-1/4 right-1/4 size-[500px] bg-accent/30 blur-[120px] rounded-full"></div>
-                </div>
-                <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="flex flex-col gap-8">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit">
-                            <span class="material-symbols-outlined text-sm"><i class="fa-solid fa-hammer"></i></span> Infraestructura de última generación
-                        </div>
-                        <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tighter text-slate-900 dark:text-white">
-                            El estándar de <span class="text-primary">confianza</span> en IT y Desarrollo.
-                        </h1>
-                        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-                            Hardware de primera calidad, configuraciones de servidor a medida e ingeniería de software de élite.
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <button class="px-8 py-4 bg-primary text-background-dark font-bold rounded-lg hover:scale-105 transition-transform glow-cyan flex items-center gap-2">
-                                Conocer más <span class="material-symbols-outlined"></span>
-                            </button>
-                            <button class="px-8 py-4 bg-surface-dark border border-white/10 text-white font-bold rounded-lg hover:bg-surface-dark/80 transition-all">
-                                Explorar tienda
-                            </button>
+    <main>
+        <section id="home" class="hero fade-in">
+            <div class="hero-content-wrapper">
+                <div class="hero-text">
+                    <div class="tag-line"><i class="fa-solid fa-bolt"></i> Infraestructura de última generación</div>
+                    <h1 class="hero-title">Soluciones <span class="text-glow-teal">tecnológicas</span> que <span class="text-glow-teal">impulsan</span> tu empresa</h1>
+                    <p class="hero-description">En Tedrix ayudamos a empresas y emprendedores a crecer con tecnología confiable, soporte profesional y soluciones a la medida.</p>
+                    <div class="hero-buttons">
+                        <a href="#custom" class="btn btn-primary glow-teal">Contactanos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#store" class="btn btn-muted">Conoce más</a>
+                    </div>
+                    <div class="trusted-by">
+                        <p>Confiado por empresas que buscan:</p>
+                        <div class="trusted-logos">
+                            <span>Seguridad</span>
+                            <span>Soporte</span>
+                            <span>Infraestructura</span>
                         </div>
                     </div>
-                    <div class="relative">
-                        <div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 glow-cyan">
-                            <img alt="Server" class="w-full aspect-square object-cover" src="static/images/temp.png">
-                            <div class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-xl">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <p class="text-primary text-xs font-bold uppercase mb-1">Desarrollamos</p>
-                                        <p class="text-white font-medium">Software a medida</p>
-                                    </div>
-                                    <div class="text-accent text-right">
-                                        <p class="text-xs font-bold uppercase mb-1">Efectividad</p>
-                                        <p class="text-white font-medium">99.99%</p>
-                                    </div>
-                                </div>
+                </div>
+                <div class="hero-mockup magnetic-card">
+                    <img src="assets/Foto Corporativa.jpg" alt="Flyer" class="server-img">
+                    <div class="status-panel">
+                        <div class="status-left">
+                            <span class="status-tag text-teal">Tu aliado tecnológico</span>
+                            <h3>Soporte · Redes · Seguridad · Desarrollos</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="section-header-row">
+                <div class="section-header-text">
+                    <h2 class="section-title">Servicios tecnológicos</h2>
+                    <p class="section-subtitle">Desarrollamos e implementamos soluciones tecnológicas escalables que acompañan el crecimiento de tu empresa en cada etapa.</p>
+                </div>
+                <a href="#" class="view-all">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="services-grid">
+                <div class="service-card magnetic-card fade-in popular">
+                    <div class="popular-tag">POPULAR</div>
+                    <div class="card-icon-wrapper orange"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Soporte Técnico</h3>
+                    <p>Mantenimiento, instalación y optimización de equipos para garantizar el rendimiento y la continuidad de tu operación.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Mantenimiento preventivo</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Instalación de software</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Optimización de sistemas</li>
+
+                    </ul>
+                </div>
+                <div class="service-card magnetic-card fade-in">
+                    <div class="card-icon-wrapper blue"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Seguridad</h3>
+                    <p>Protegemos tu empresa con soluciones de seguridad física y digital que garantizan el control y la tranquilidad de tu operación.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Ciberseguridad</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Control de accesos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cámaras CCTV</li>
+                    </ul>
+                </div>
+                <div class="service-card magnetic-card fade-in">
+                    <div class="card-icon-wrapper blue"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Redes e Infraestructura</h3>
+                    <p>Diseñamos e implementamos redes estables y seguras para asegurar una conectividad eficiente en tu empresa.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Redes WiFi</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Configuración de Servidores</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cableado estructurado</li>
+                    </ul>
+                </div>
+                <div class="service-card magnetic-card fade-in">
+                    <div class="card-icon-wrapper blue"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Desarrollo a medida</h3>
+                    <p>Creamos soluciones digitales adaptadas a las necesidades de tu negocio para mejorar procesos y presencia online.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Aplicaciones</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Automatización de procesos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Páginas web</li>
+                    </ul>
+                </div>
+                <div class="service-card magnetic-card fade-in">
+                    <div class="card-icon-wrapper blue"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3>Equipos</h3>
+                    <p>Suministramos equipos tecnológicos confiables con asesoría personalizada para cada tipo de empresa.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Computadores</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Servidores</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Soluciones empresariales</li>
+                    </ul>
+                </div>
+                <div class="service-card magnetic-card fade-in">
+                    <div class="card-icon-wrapper blue"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Para Empresas</h3>
+                    <p>Acompañamos a tu empresa en la gestión y optimización del área de sistemas con soporte y asesoría especializada.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Soporte remoto (rol de ingeniero de sistemas)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Documentación y procedimientos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Apoyo al área de TI</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Asesoría estratégica</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="store" class="hardware section">
+            <div class="section-header-row">
+                <h2 class="section-title">Equipos y soluciones tecnológicas</h2>
+                <div class="slider-controls">
+                    <button class="slider-btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="slider-btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="hardware-grid" id="hardware-grid"></div>
+        </section>
+
+        <section id="custom" class="custom-build section full-width fade-in">
+            <div class="custom-content-wrapper">
+                <div class="custom-text">
+                    <h2>¿Necesitas una <span class="text-orange">solución tecnológica?  </span></h2>
+                    <p>En Tedrix diseñamos e implementamos soluciones a la medida para empresas y emprendedores.</p>
+                    <div class="custom-features">
+                        <div class="c-feat-item">
+                            <i class="fa-solid fa-rocket feat-icon"></i>
+                            <div class="c-feat-text">
+                                <h4>Implementación rápida</h4>
+                                <p>Ponemos en marcha tus soluciones tecnológicas de forma ágil y eficiente.</p>
+                            </div>
+                        </div>
+                        <div class="c-feat-item">
+                            <i class="fa-solid fa-code feat-icon text-orange"></i>
+                            <div class="c-feat-text">
+                                <h4>Soporte disponible</h4>
+                                <p>Atención oportuna para garantizar el correcto funcionamiento de tus sistemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary orange glow-orange">Agenda tu asesoría</button>
+                </div>
+                <div class="custom-visual magnetic-card">
+                    <div class="consultation-placeholder">
+                        <div class="c-content"><h3>Habla con un experto</h3></div>
+                        <div class="c-expert-chat">
+                            <div class="expert-avatars">
+                                <img src="https://ui-avatars.com/api/?name=Dev&background=random" alt="Exp">
+                                <img src="https://ui-avatars.com/api/?name=Eng&background=random" alt="Exp">
+                                <img src="https://ui-avatars.com/api/?name=Sec&background=random" alt="Exp">
+                            </div>
+                            <div class="expert-info">
+                                <p class="experts-online"><i class="fa-solid fa-circle text-teal"></i> Expertos en lina</p>
+                                <p>Asistencia técnica (24/7)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            </main>
+            </div>
+        </section>
+    </main>
 
-        <footer class="bg-background-dark border-t border-white/5 pt-20 pb-10 px-6 text-center text-slate-500 text-sm">
-            <p>© 2026 Tedrix. Designed for the Future.</p>
-        </footer>
-    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="main-logo" src="assets/Logo Tedrix.png" alt="Logo Tedrix">
+                <p class="brand-desc">En Tedrix ayudamos a empresas y emprendedores a crecer con tecnología confiable, soporte profesional y soluciones a la medida.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    <a href="#"><i class="fa-solid fa-code-merge"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="link-col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Computadores Corporativos</a></li>
+                        <li><a href="#">Servidores</a></li>
+                        <li><a href="#">Racks</a></li>
+                        <li><a href="#">Perifericos</a></li>
+                        <li><a href="#">Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Soporte Técnico</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                        <li><a href="#">Redes e Infraestructura</a></li>
+                        <li><a href="#">Desarrollos a medida</a></li>
+                        <li><a href="#">Equipos</a></li>
+                        <li><a href="#">Para Empresas</a></li>
+                        </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">comercial@tedrix.co</a></li>
+                    </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Condiciones de Venta</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tedrix. Todos los derechos reservados.</p>
+            <div class="footer-meta"><span>Diseñado y desarrollado por el equipo de Tedrix</span></div>
+        </div>
+    </footer>
 
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

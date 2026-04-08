@@ -17,7 +17,7 @@
 <h1 align="center">Welcome to tedrix.co 🩵</h1>
 
 <p align="center">
-  <em>Premium hardware, bespoke server configurations, and elite software engineering. Tedrix provides the technological foundation for the world's most ambitious projects.</em>
+  <em>At Tedrix, we help businesses and entrepreneurs grow with reliable technology, professional support, and customized solutions.</em>
 </p>
 
 ---
@@ -54,7 +54,7 @@ Web development and design by **tedrixTeam**
 ## 🧾 License
 
 This project is owned by **tedrix.co**  
-© 2025 — All rights reserved.  
+© 2026 — All rights reserved.  
 Reproduction or redistribution without written permission is prohibited.
 
 ---
