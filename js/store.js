@@ -29,7 +29,7 @@ const products = [
         name: "iPad 17 Pro", 
         price: "4.505.000", 
         category: "Tablets", 
-        image: "../assets/Tablet.png", 
+        image: "assets/Tablet.png", 
         reviews: 203 
     }
 ];
