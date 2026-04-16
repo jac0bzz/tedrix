@@ -38,6 +38,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0 20px; /* Margen de seguridad para móviles */
         }
 
         .error-card {
@@ -49,6 +50,7 @@
             border-radius: 30px;
             text-align: center;
             max-width: 600px;
+            width: 100%;
             box-shadow: 0 40px 100px rgba(0,0,0,0.8);
         }
 
@@ -122,6 +124,39 @@
             background: var(--primary-teal);
             margin: 20px auto;
             box-shadow: 0 0 10px var(--primary-teal);
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .error-card {
+                padding: 40px 20px;
+                border-radius: 20px;
+            }
+            .error-code {
+                font-size: 6rem; /* Achicamos el número */
+            }
+            .error-title {
+                font-size: 1.5rem;
+            }
+            .error-message {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 5rem; /* Aún más chico para pantallas muy estrechas */
+            }
+            .error-title {
+                font-size: 1.3rem;
+            }
+            .back-home-btn {
+                padding: 12px 25px;
+                font-size: 0.85rem;
+                width: 100%; /* Botón ancho en móviles */
+                justify-content: center;
+            }
         }
     </style>
 </head>
