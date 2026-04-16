@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tedrix | Equipos Corporativos</title>
+    <link rel="icon" type="image/x-icon" href="assets/Icono-Tedrix.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/shop.css">
+    
+</head>
+<body>
+    <div class="global-background-glow"></div>
+
+    <div id="preloader">
+        <img src="assets/Logo Tedrix.png" alt="Tedrix" class="loader-logo">
+        <div class="loader-bar"></div>
+    </div>
+
+        <header id="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img class="main-logo" src="assets/Logo Tedrix.png" alt="Logo Tedrix">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <div class="cart-icon" onclick="toggleCartModal()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="store-page section">
+        <div class="store-container">
+            <aside class="store-sidebar">
+                <div class="sidebar-block">
+                    <h3>Buscar Equipo</h3>
+                    <div class="search-box">
+                        <input type="text" id="product-search" placeholder="Ej: MacBook, Servidor...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3>Categorías</h3>
+                    <ul class="filter-list">
+                        <li class="filter-item active" data-category="all">Todos los productos</li>
+                        <li class="filter-item" data-category="Computadores Corporativos">Computadores</li>
+                        <li class="filter-item" data-category="Servidores">Servidores</li>
+                        <li class="filter-item" data-category="Racks">Racks</li>
+                        <li class="filter-item" data-category="Tablets">Tablets</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3>Presupuesto</h3>
+                    <label id="price-label" style="display: block; margin-bottom: 10px; color: var(--text-muted);">Hasta: $70.000.000</label>
+                    <input type="range" id="price-range" min="0" max="70000000" step="700000" value="70000000">
+                </div>
+            </aside>
+
+            <div class="store-content">
+                <div class="section-header-row">
+                    <h2 class="section-title" style="text-align: left;">Catálogo <span>Tecnológico</span></h2>
+                </div>
+                <div class="hardware-grid" id="hardware-grid">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="main-logo" src="assets/Logo Tedrix.png" alt="Logo Tedrix">
+                <p class="brand-desc">En Tedrix ayudamos a empresas y emprendedores a crecer con tecnología confiable, soporte profesional y soluciones a la medida.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tedrix.col/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Tedrix.co/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="www.tiktok.com/@tedrix.co"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.link/7ah8lb"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="link-col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#store">Computadores Corporativos</a></li>
+                        <li><a href="#store">Servidores</a></li>
+                        <li><a href="#store">Racks</a></li>
+                        <li><a href="#store">Perifericos</a></li>
+                        <li><a href="#store">CCTV</a></li>
+                    </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#services">Soporte Técnico</a></li>
+                        <li><a href="#services">Seguridad</a></li>
+                        <li><a href="#services">Redes e Infraestructura</a></li>
+                        <li><a href="#services">Desarrollos a medida</a></li>
+                        <li><a href="#services">Equipos</a></li>
+                        <li><a href="#services">Para Empresas</a></li>
+                        </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="https://wa.link/7ah8lb">WhatsApp</a></li>
+                        <li><a href="https://www.instagram.com/tedrix.col/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/Tedrix.co/">Facebook</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">info@tedrix.co</a></li>
+                    </ul>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Condiciones de Venta</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tedrix. Todos los derechos reservados.</p>
+            <div class="footer-meta"><span>Diseñado y desarrollado por el equipo de Tedrix</span></div>
+        </div>
+    </footer>
+
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCartModal()"></div>
+    <aside id="cart-modal" class="cart-panel">
+        <div class="cart-panel-header">
+            <h2>Tu Cotización</h2>
+            <button class="close-modal" onclick="toggleCartModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div id="cart-items-container" class="cart-items-list">
+            </div>
+        
+        <div class="cart-panel-footer">
+            <div class="cart-subtotal">
+                <span>Total estimado:</span>
+                <span id="cart-total-price" class="text-teal">$0</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 15px;">
+                <button id="btn-whatsapp-cotizar" class="btn btn-primary orange w-100" style="justify-content: center;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Enviar a un asesor
+                </button>
+                <button class="btn btn-muted w-100" onclick="toggleCartModal()" style="justify-content: center;">
+                    Seguir comprando
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    
+    <a href="https://wa.link/7ah8lb" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/store.js?v=2"></script>
+</body>
+</html>

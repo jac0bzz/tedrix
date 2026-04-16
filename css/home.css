@@ -1,0 +1,408 @@
+/* ==========================================================================
+   HOME.CSS - Estilos exclusivos de la página de inicio (Tedrix)
+   ========================================================================== */
+
+/* ================= 1. HERO SECTION ================= */
+.hero { 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    padding-top: 80px; 
+    background: radial-gradient(circle at top left, rgba(14,165,233,0.08) 0%, transparent 50%); 
+}
+
+.hero-content-wrapper { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    width: 100%; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    align-items: center; 
+}
+
+.tag-line { 
+    color: var(--primary-teal); 
+    font-size: 0.85rem; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    margin-bottom: 20px; 
+}
+
+.hero-title { 
+    font-size: 4rem; 
+    font-weight: 700; 
+    line-height: 1.1; 
+    margin-bottom: 25px; 
+    letter-spacing: -2px; 
+}
+
+.hero-description { 
+    color: var(--text-muted); 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    margin-bottom: 40px; 
+    max-width: 500px; 
+}
+
+.hero-buttons { 
+    display: flex; 
+    gap: 15px; 
+    margin-bottom: 50px; 
+}
+
+/* Logos de confianza en el Hero */
+.trusted-by p { 
+    font-size: 0.8rem; 
+    color: var(--text-muted); 
+    margin-bottom: 10px; 
+    letter-spacing: 1px; 
+}
+.trusted-logos { 
+    display: flex; 
+    gap: 30px; 
+    font-weight: bold; 
+    color: rgba(255,255,255,0.7); 
+    letter-spacing: 2px; 
+}
+
+/* Mockup / Imagen del Hero */
+.hero-mockup { 
+    padding: 25px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    background: linear-gradient(145deg, rgba(21, 26, 34, 0.6), rgba(11, 14, 20, 0.9)); 
+    border-radius: 16px; 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); 
+    max-width: 500px; 
+    margin-left: auto; 
+}
+.server-img { 
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255,255,255,0.05); 
+}
+.status-panel { 
+    display: flex; 
+    justify-content: space-between; 
+    background: rgba(0,0,0,0.4); 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    border: 1px solid var(--border); 
+}
+.status-tag { 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+
+/* ================= 2. SECCIÓN SERVICIOS ================= */
+.services-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+.service-card { 
+    padding: 40px; 
+}
+.card-icon-wrapper { 
+    width: 55px; 
+    height: 55px; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1.5rem; 
+    margin-bottom: 25px; 
+    background: rgba(255,255,255,0.05); 
+}
+.card-icon-wrapper.blue { color: var(--primary-teal); }
+.card-icon-wrapper.orange { color: var(--primary-orange); }
+
+.service-card h3 { 
+    font-size: 1.4rem; 
+    margin-bottom: 15px; 
+}
+.service-card p { 
+    color: var(--text-muted); 
+    margin-bottom: 25px; 
+    font-size: 0.95rem; 
+    line-height: 1.5; 
+}
+
+.card-features li { 
+    color: var(--text-muted); 
+    font-size: 0.85rem; 
+    margin-bottom: 8px; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.card-features i { 
+    font-size: 0.8rem; 
+    color: var(--primary-teal); 
+}
+
+.service-card.popular { 
+    border-color: var(--primary-orange); 
+}
+.popular-tag { 
+    position: absolute; 
+    top: 0; 
+    right: 20px; 
+    background: var(--primary-orange); 
+    font-size: 0.7rem; 
+    font-weight: bold; 
+    padding: 5px 12px; 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+}
+
+
+/* ================= 3. SECCIÓN PROCESO DE TRABAJO ================= */
+.process-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; 
+    margin-top: 40px; 
+}
+.process-card { 
+    padding: 40px 30px; 
+    position: relative; 
+}
+.step-number { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    font-family: var(--font-logo); 
+    font-size: 3.5rem; 
+    font-weight: bold; 
+    color: rgba(255,255,255,0.03); 
+    line-height: 1; 
+    pointer-events: none; 
+}
+.process-card h3 { 
+    font-size: 1.3rem; 
+    margin-bottom: 15px; 
+}
+.process-card p { 
+    color: var(--text-muted); 
+    font-size: 0.9rem; 
+    line-height: 1.6; 
+}
+
+
+/* ================= 4. CARRUSEL TECH STACK ================= */
+.tech-stack { 
+    padding: 60px 8%; 
+    background: radial-gradient(circle at center, rgba(14, 165, 233, 0.03) 0%, transparent 70%); 
+    border-top: 1px solid rgba(255,255,255,0.02); 
+    border-bottom: 1px solid rgba(255,255,255,0.02); 
+}
+.carousel-container { 
+    overflow: hidden; 
+    width: 100%; 
+    position: relative; 
+    padding: 10px 0; 
+}
+.carousel-container::before, 
+.carousel-container::after { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    width: 150px; 
+    height: 100%; 
+    z-index: 2; 
+    pointer-events: none; 
+}
+.carousel-container::before { 
+    left: 0; 
+    background: linear-gradient(to right, var(--bg-main), transparent); 
+}
+.carousel-container::after { 
+    right: 0; 
+    background: linear-gradient(to left, var(--bg-main), transparent); 
+}
+
+.carousel-track { 
+    display: flex; 
+    gap: 30px; 
+    width: max-content; 
+    animation: scrollCarousel 35s linear infinite; 
+}
+.carousel-track:hover { 
+    animation-play-state: paused; 
+}
+.tech-badge { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    padding: 12px 28px; 
+    background: rgba(255, 255, 255, 0.02); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    border-radius: 100px; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: var(--text-muted); 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    backdrop-filter: blur(10px); 
+    cursor: default; 
+}
+.tech-badge i { 
+    font-size: 1.4rem; 
+    color: rgba(255, 255, 255, 0.3); 
+    transition: var(--transition); 
+}
+.tech-badge:hover { 
+    background: rgba(14, 165, 233, 0.08); 
+    border-color: rgba(14, 165, 233, 0.4); 
+    color: #fff; 
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2); 
+}
+.tech-badge:hover i { 
+    color: var(--primary-teal); 
+    transform: scale(1.1); 
+}
+@keyframes scrollCarousel { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(calc(-50% - 15px)); } 
+}
+
+
+/* ================= 5. DESARROLLO A MEDIDA & TERMINAL ================= */
+.custom-build { 
+    background: var(--bg-full); 
+}
+.custom-content-wrapper { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 80px; 
+    align-items: center; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+}
+.custom-text h2 { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+.custom-text p { 
+    color: var(--text-muted); 
+    margin-bottom: 40px; 
+    font-size: 1.1rem; 
+}
+.custom-features { 
+    display: flex; 
+    gap: 40px; 
+    margin-bottom: 40px; 
+}
+.c-feat-item { 
+    display: flex; 
+    gap: 15px; 
+}
+.feat-icon { 
+    font-size: 1.5rem; 
+    color: var(--primary-teal); 
+}
+.c-feat-text h4 { 
+    font-size: 1.1rem; 
+    margin-bottom: 5px; 
+}
+.c-feat-text p { 
+    font-size: 0.9rem; 
+    margin-bottom: 0; 
+}
+
+/* Terminal Window Visual */
+.custom-visual { 
+    padding: 0; 
+    background: transparent; 
+    border: none; 
+    text-align: left; 
+}
+.terminal-window { 
+    background: #0d1117; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
+    border: 1px solid var(--border); 
+}
+.terminal-header { 
+    background: #161b22; 
+    padding: 12px 20px; 
+    display: flex; 
+    align-items: center; 
+    border-bottom: 1px solid var(--border); 
+}
+.terminal-dots { 
+    display: flex; 
+    gap: 8px; 
+}
+.terminal-dots span { 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+}
+.dot-red { background: #ff5f56; } 
+.dot-yellow { background: #ffbd2e; } 
+.dot-green { background: #27c93f; }
+
+.terminal-title { 
+    margin: 0 auto; 
+    color: var(--text-muted); 
+    font-size: 0.85rem; 
+    font-family: monospace; 
+}
+.terminal-body { 
+    padding: 30px 25px; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    color: #c9d1d9; 
+}
+.cmd-prompt { color: var(--primary-teal); font-weight: bold; }
+.cmd-path { color: var(--primary-orange); }
+.cmd-muted { color: var(--text-muted); }
+.cmd-success { color: #2ea043; font-weight: bold; }
+
+.typing-animation::after { 
+    content: '█'; 
+    animation: blink 1s step-start infinite; 
+    color: var(--primary-teal); 
+    margin-left: 5px; 
+}
+@keyframes blink { 
+    50% { opacity: 0; } 
+}
+
+.terminal-experts { 
+    background: rgba(255,255,255,0.02); 
+    border-top: 1px solid var(--border); 
+    padding: 15px 25px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.terminal-experts .expert-avatars img { 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    margin-left: -12px; 
+    border: 2px solid #0d1117; 
+}
+.terminal-experts .expert-avatars img:first-child { 
+    margin-left: 0; 
+}
+.terminal-experts .expert-info { 
+    text-align: right; 
+    font-family: var(--font-heading); 
+}
