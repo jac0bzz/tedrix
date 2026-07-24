@@ -46,7 +46,7 @@
 
 **tedrix**  
 Web development and design by **tedrixTeam**  
-📧 sistemas@tedrix.co <br>
+📧 Ingenieria@tedrix.co <br>
 🌐 [https://jac0bzz.github.io/tedrix/](https://jac0bzz.github.io/tedrix/)
 
 ---
